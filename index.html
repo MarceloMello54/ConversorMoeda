@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="principal">
+        <!-- container para formulario -->
+        <div id=" ">
+            <form action="#">
+                <div class="cacalho">
+                    <div class="titulo">
+                        <h2>Conversor de moedas</h2>
+                    </div>
+
+
+                </div>
+                <!-- Campo do formulario -->
+                <div class="grupo">
+                    <div class="campo">
+                        <label for="Origem">Valor em Moeda de Origem :</label>
+                        <input type="text" id="valor" 
+                        name="valor" placeholder="Digite o Valor" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="moeadaOrigem">De</label>
+                        <select name="opcoes" id="moeadaOrigem">
+                            <option value="USD">Dolar (USD)</option>
+                            <option value="EUR">Euro (EUR)</option>
+                            <option value="BRL">Real (BRL)</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="moeadaDestino">Para:</label>
+                        <select name="opcoes" id="moeadaDestino">
+                            <option value="BRL">Real (BRL)</option>
+                            <option value="USD">Dolar (USD)</option>
+                            <option value="EUR">Euro (EUR)</option>
+                        </select>                        
+                    </div>
+                    
+                    <div class="butao">
+                        <button onclick="converterMoeda()" type="button">Converter</a></button>
+                       
+                    </div> 
+                    <p id="resultado"></p>
+                </div>
+
+        </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
